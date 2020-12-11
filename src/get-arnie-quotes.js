@@ -13,7 +13,7 @@ const getArnieQuotes = async (urls) => {
 };
 
 /**
- * @param {{ status: string, value: string, reason: string }[]} promisesResponse
+ * @param {{ status: number, value: string, reason: string }[]} promisesResponse
  * @returns {{ ['Arnie Quote' | 'FAILURE']: string }[]}
  */
 const handleResponses = promisesResponse => {
