@@ -19,7 +19,7 @@ const getArnieQuotes = async (urls) => {
 const handleResponses = promisesResponse => {
   return promisesResponse.map(res => {
     if (res.status !== 'fulfilled')
-      return { FAILURE: reason };
+      return { FAILURE: res.reason };
       
     const { status, body } = res.value;
     const { message } = JSON.parse(body);
